@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geo Tweets</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        #map {
+            height: 100%;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./CSS/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/css/style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=visualization"></script>
+    <script type="text/javascript" src="/JS/socket.io-client.min.js">
+    </script>
+    <script type="text/javascript" src="/JS/jquery.min.js">
+    </script>
+    <script src="/JS/twitterJS.js"></script>
+</head>
+
+<body onload="initMap();">
+
+    <label>Search:</label>
+    <select onchange="selectItem(this.value)">
+        <option value="" selected></option>
+        <option value="trump">Donald Trump</option>
+        <option value="clinton">Hillary Clinton</option>
+        <option value="obama">Barack Obama</option>
+        <option value="ronaldo">Cristiano Ronaldo</option>
+        <option value="messi">Lionel Messi</option>
+        <option value="shakira">Shakira</option>
+        <option value="taylor swift">Taylor Swift</option>
+        <option value="nba">NBA</option>
+        <option value="kohli">Virat Kohli</option>
+        <option value="M.S.Dhoni">M.S.Dhoni</option>
+      </select>
+    <div id="map"></div>
+</body>
+
+</html>

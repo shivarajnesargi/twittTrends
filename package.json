@@ -1,0 +1,29 @@
+{
+  "name": "twitt_trends",
+  "version": "1.0.0",
+  "description": "Sentimental Analysis of Twitter",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shivaraj Nesaragi",
+  "license": "ISC",
+  "dependencies": {
+    "alchemy-api": "^1.3.3",
+    "aws-sdk": "^2.7.5",
+    "cors": "^2.8.1",
+    "dotenv": "^2.0.0",
+    "elasticsearch": "^12.1.0",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "http-aws-es": "^1.1.3",
+    "net": "^1.0.2",
+    "path": "^0.12.7",
+    "socket.io": "^1.5.1",
+    "sqs-consumer": "^3.4.0",
+    "twitter": "^1.4.0",
+    "watson-developer-cloud": "^2.9.0"
+  }
+}
